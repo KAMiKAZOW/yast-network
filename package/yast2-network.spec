@@ -17,7 +17,7 @@
 
 
 Name:           yast2-network
-Version:        4.2.23
+Version:        4.2.24
 Release:        0
 Summary:        YaST2 - Network Configuration
 License:        GPL-2.0-only
@@ -33,8 +33,9 @@ BuildRequires:  yast2-devtools >= 3.1.15
 #for install task
 BuildRequires:  rubygem(%rb_default_ruby_abi:yast-rake)
 BuildRequires:  yast2-storage-ng
-# CFA::Sysctl
-BuildRequires:  yast2 >= 4.2.25
+# NetworkService check if Systemd is running for determining
+# the current network backend
+BuildRequires:  yast2 >= 4.2.29
 BuildRequires:  yast2-packager >= 4.0.18
 # Product control need xml agent
 BuildRequires:  yast2-xml
